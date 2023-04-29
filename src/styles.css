@@ -1,0 +1,211 @@
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexEnd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.collab{
+    background: rgba(109, 164, 214, 0.3);
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  cursor: pointer;
+  position: relative;
+}
+
+.user::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+}
+
+
+.profile-picture-wrapper {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #b1adad;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.status-dot {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-dot.online {
+  background-color: green;
+}
+
+.status-dot.offline {
+  background-color: gray;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.full-name {
+  font-weight: bold;
+}
+
+.course {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 80vw;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 7px 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 13px;
+  z-index: 1;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/futura medium bt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('./fonts/Futura Heavy font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading{
+  font-family: 'Futura', sans-serif;
+  font-size: 32px;
+  position: relative;
+}
+
+.heading::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 10px;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(180, 40, 40, 0.8);
+  z-index: -1;
+}
+
+
+.m-0{
+  margin: 0;
+}
+.dropdown-option {
+    padding: 14px;
+    color: #fff;
+    font-weight: normal;
+    text-align: justify;
+    margin: 6px 2px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Futura';
+}
+
+.dropdown-option:hover {
+  background-color: #e5e5e5;
+}
+
+.dropdown-option:nth-child(1) {
+  background-color: #28B492;
+}
+
+.dropdown-option:nth-child(2) {
+  background-color: rgba(180, 40, 40, 0.8);
+}
+
+.dropdown-option:nth-child(3) {
+  background-color: #8A4C7D;
+}
+
+.dropdown-option:nth-child(4) {
+  background-color: #99BFE2;
+}
+
+.dropdown-option:nth-child(5) {
+  background-color: #FD969C;
+}
