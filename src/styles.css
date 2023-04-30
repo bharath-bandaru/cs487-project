@@ -16,6 +16,102 @@
     align-items: flex-end;
 }
 
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flexEven{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.add{
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+.card{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 20px 10px;
+}
+
+.event {
+  position: relative;
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.event-location {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.event-time {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.event-details {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #d1d1d6;
+}
+
+.event-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event-action-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.event-toggle {
+  position: absolute;
+  bottom: -24px;
+}
 .collab{
     background: rgba(109, 164, 214, 0.3);
     border: 1px solid #000000;
@@ -208,4 +304,68 @@ body {
 
 .dropdown-option:nth-child(5) {
   background-color: #FD969C;
+}
+
+
+
+.messaging-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 16px;
+  background-color: #f7f7f7;
+}
+
+.messages-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.message-bubble {
+  display: inline-flex;
+  max-width: 70%;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.my-message {
+  align-self: flex-end;
+  background-color: #85c1e9;
+}
+
+.message-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.chat-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+.chat-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  background-color: #85c1e9;
+  color: #fff;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
 }

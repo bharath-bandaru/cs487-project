@@ -9,6 +9,7 @@ import Jobs from './Jobs';
 import Collaborate from './Collaborate';
 import Calendar from './Calendar';
 import Notifications from './Notifications';
+import Users from './Users';
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -116,27 +117,40 @@ const HomePage = () => {
                 <div style={{padding:"24px"}}> 
                         {
                             currentPage === "profile"  && 
-                            <Profile/>
+                            <Profile
+                                color = {"#99BFE2"}
+                                handleClick={handleClick}
+                            />
                         }
                         {
                             currentPage === "health"  && 
-                            <Health/>
+                            <Health
+                                color = {"rgba(180, 40, 40, 0.8)"}
+                            />
                         }
                         {
                             currentPage === "jobs"  && 
-                            <Jobs/>
+                            <Jobs
+                                color = {"#99BFE2"}
+                            />
                         }
                         {
                             currentPage === "collaborate"  && 
-                            <Collaborate/>
+                            <Collaborate 
+                                color = {"#99BFE2"}
+                            />
                         }
                         {
                             currentPage === "calendar"  && 
-                            <Calendar/>
+                            <Calendar
+                                color = {"#FD969C"}
+                            />
                         }
                         {
                             currentPage === "notifications"  && 
-                            <Notifications/>
+                            <Notifications
+                                color = {"#99BFE2"}
+                            />
                         }
                 </div>
             </div>
@@ -144,7 +158,7 @@ const HomePage = () => {
                 <div key={"pp"}  className="user flexCenter">
                     Collab
                 </div>
-                {renderUsers()}
+                <Users/>
                 <button onClick={handleSubmit} type="submit">Log out</button>
             </div>
 
