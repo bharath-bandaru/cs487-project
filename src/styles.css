@@ -306,7 +306,9 @@ body {
   background-color: #FD969C;
 }
 
-
+.dropdown-option:nth-child(6) {
+  background-color: #676767;
+}
 
 .messaging-container {
   display: flex;
@@ -357,6 +359,16 @@ body {
   border: none;
   outline: none;
   font-size: 14px;
+}
+
+.inputlabel{
+  max-width: 300px;
+  width: 100%;
+  height: 45px;
+  left: 36px;
+  top: 416px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
 }
 
 .send-button {

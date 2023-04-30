@@ -75,6 +75,9 @@ const HomePage = () => {
             case "calendar":
                 setCurrentPage("calendar")
                 break;
+            case "logout":
+                handleSubmit()
+                break;
             default:
                 break;
         }
@@ -108,6 +111,9 @@ const HomePage = () => {
                                 </div>
                                 <div className="dropdown-option" onClick={() => handleClick("calendar")}>
                                     Calendar
+                                </div>
+                                <div className="dropdown-option" onClick={() => handleClick("logout")}>
+                                    Logout
                                 </div>
                                 </div>
                             )}

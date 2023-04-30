@@ -1,6 +1,7 @@
 import React, {  useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfilePic from '../assets/avatar.jpg'
+import Post from './Post';
 
 const Profile = (props) => {
     const navigate = useNavigate();
@@ -31,21 +32,12 @@ const Profile = (props) => {
                     </div>
                     
                 </div>
-                <div className="dropdown">
+                    <div className="dropdown">
                         <div className='flexCenter'>
-                            <h3 style={{borderTop: "3px solid #dadada", paddingTop:"10px", width: "50%", textAlign:"center"}}>Navigate</h3>
+                            <h3 style={{borderTop: "3px solid #dadada", paddingTop:"10px", width: "50%", textAlign:"center"}}>Feed</h3>
                         </div>
-                        <div className="dropdown-option" onClick={() => props.handleClick("health")}>
-                            Health
-                        </div>
-                        <div className="dropdown-option" onClick={() => props.handleClick("jobs")}>
-                            Jobs
-                        </div>
-                        <div className="dropdown-option" onClick={() => props.handleClick("collaborate")}>
-                            Collaborate
-                        </div>
-                        <div className="dropdown-option" onClick={() => props.handleClick("calendar")}>
-                            Calendar
+                        <div> 
+                            <Post/>
                         </div>
                     </div>
             </div>

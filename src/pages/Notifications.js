@@ -11,11 +11,18 @@ const Notifications = (props) => {
         }
     }, [navigate]);
     return (
-        <div style={{width:"100%", textAlign:"start"}}>
-            <h1 style={{ fontFamily: 'Futura', fontSize: '32px', position: 'relative' }}>
-                Notifications
-            <span style={{ content: '', position: 'absolute', bottom: '2px', left: "10px", width: '200px', height: '12px', backgroundColor: color, zIndex: '-1' }}></span>
-            </h1>
+        <div>
+            <div style={{width:"100%", textAlign:"start"}}>
+                <h1 style={{ fontFamily: 'Futura', fontSize: '32px', position: 'relative' }}>
+                    Notifications
+                <span style={{ content: '', position: 'absolute', bottom: '2px', left: "10px", width: '200px', height: '12px', backgroundColor: color, zIndex: '-1' }}></span>
+                </h1>
+            </div>
+            <div className="container" style={{textAlign: "start"}}>
+                    <div style={{ borderRadius: "15px", border:"1px solid", padding:"1px 20px"}}>
+                            <p>No New Notifiactions</p>
+                    </div>
+                </div>
         </div>
     );
 }
